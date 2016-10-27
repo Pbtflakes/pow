@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -g -Wall
 TARGET = power
-FILES = main.c
+FILES = src/main.c src/utils.c
 
 all: $(TARGET)
 
-$(TARGET): main.c
+$(TARGET): src/main.c
 	$(CC) $(CFLAGS) -o $(TARGET) $(FILES)
